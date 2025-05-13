@@ -1,11 +1,9 @@
 package com.example.project.user.dto;
 
 import com.example.project.user.entity.User;
-import com.example.project.user.enums.Role;
 import lombok.Getter;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Getter
 public class SignupResponseDto {
