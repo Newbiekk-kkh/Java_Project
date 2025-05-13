@@ -17,7 +17,7 @@ public class UserController {
 
     @PostMapping("/signup")
     public ResponseEntity<SignupResponseDto> signup(@RequestBody SignupRequestDto requestDto) {
-        userService.signup(requestDto);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        SignupResponseDto responseDto = userService.signup(requestDto);
+        return new ResponseEntity<>(responseDto, HttpStatus.CREATED);
     }
 }
