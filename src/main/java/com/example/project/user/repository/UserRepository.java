@@ -26,6 +26,10 @@ public class UserRepository {
         return user;
     }
 
+    public Optional<User> findById(Long id) {
+        return Optional.ofNullable(userStoreById.get(id));
+    }
+
     public Optional<User> findByUsername(String username) {
         return Optional.ofNullable(userStoreByUsername.get(username));
     }

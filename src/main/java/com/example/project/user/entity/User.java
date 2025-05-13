@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Getter
@@ -26,4 +25,8 @@ public class User {
         this.roles.add(Role.USER);
     }
 
+    public void updateRoles(Role role) {
+        this.roles.clear();
+        this.roles.add(role);
+    }
 }
