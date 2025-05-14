@@ -37,6 +37,7 @@ public class UserService {
         User user = userRepository.findById(userId).orElseThrow(() -> new AuthException(ErrorCode.USER_NOT_FOUND));
 
         user.updateRoles(Role.ADMIN);
+        userRepository.save(user);
 
         return AdminRoleResponseDto.toDto(user);
     }
