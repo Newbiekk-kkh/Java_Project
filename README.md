@@ -20,7 +20,8 @@ Swagger 링크 : http://52.78.48.78:8080/swagger-ui/index.html
 ![image](https://github.com/user-attachments/assets/d45a55aa-85f1-460b-91f2-b54b3f08261b)
 
 ## 배포 아키텍쳐
-![image](https://github.com/user-attachments/assets/9db800d9-5822-4c63-8699-abf4680d7ae3)
+![image](https://github.com/user-attachments/assets/01852757-e5ba-45eb-b3ac-d326f9af39db)
+
 
 **주요 특징:**
 * EC2 인스턴스에서 직접 소스 코드를 클론합니다.
